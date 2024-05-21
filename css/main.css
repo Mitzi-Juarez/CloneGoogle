@@ -249,39 +249,95 @@ box-shadow: 0 1px 6px #a7afbd;
 }
 
 /* MAIN BUTTONS SECTION */
-main .main-buttons {
-    /* anchura */
-    width: 550px ;
-    /* Vertical ~ Horizontal */
+
+/* SECTION BUTTONS */
+.main-buttons {
+    width: 550px;
     margin: 0 auto;
+    text-align: center;
 }
 
-main .main-buttons div {
-    /* Alinear elementos en la misma línea */
-    display: inline;
+.main-buttons div {
+    display: inline-block;
 }
 
-main .main-buttons button {
-    /* SEPARACIÓN ENTRE BUSCADOR Y BOTONES */
-    margin-top: 30px;
-    /* Eliminar borde negro -- NONE or 0px */
+.main-buttons button {
+    margin-top: 20px;
     border: none;
     height: 40px;
     background-color: #f8f9fa;
-    /* Color de texto */
     color: #3c4043;
     border-radius: 5px;
-    padding: 0px 15px;
+    padding: 0 15px;
     font-size: 14px;
     margin-right: 10px;
 }
 
-main .main-buttons button:hover{
+.main-buttons button:hover {
     color: #202124;
-    /* borde + oscuro al pasar mouse */
     border: 1px solid #dadce0;
-    /* Sombra al pasar mouse */
     box-shadow: 0 1px 1px 1px rgba(0,0,0,.1);
 }
 
+/* MEXICIO */
+.footer-mexico {
+    background-color: #f2f2f2;
+    padding: 10px 0px;
+    text-align:left;
+    border-bottom: 1px solid #e4e4e4;
+    margin-left: 11px;
+    padding-block-end: 10px;
+    justify-content: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px;
+   
+}
 
+
+.footer-mexico span {
+    color: #000000;
+    font-size: 13px; /* tamaño deee la funte*/
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #f2f2f2;
+    color: #000000;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+footer ul.footer-left {
+    justify-content: flex-start;
+}
+
+footer ul.footer-right {
+    justify-content: flex-end;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #000000;
+}
